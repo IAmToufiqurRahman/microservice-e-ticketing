@@ -9,3 +9,5 @@ export abstract class CustomError extends Error {
 
   abstract serializeErrors(): { message: string; field?: string }[]
 }
+
+// serializeErrors(), the goal of this method is to take all the information about the error and then return some array of objects that follow the common error structure
